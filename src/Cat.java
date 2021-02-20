@@ -1,15 +1,20 @@
-public class Cat
-{
+public class Cat {
+    //private   String Demon;
     private double originWeight;
     private double weight;
     public static final int EYE_COUNT = 2;
     public static final double MIN_WEIGHT = 1000;
     public static final double MAX_WEIGHT = 9000;
-
+    public String name;
     private double minWeight;
     private double maxWeight;
 
     public String color;
+
+
+    {
+
+    }
 
 //    public void catColor()
 //    {
@@ -18,24 +23,43 @@ public class Cat
 //        System.out.println(catColor);
 //    }
 
-    public void setColor(Color color)
-    {
+    public void setColor(Color color) {
         this.color = String.valueOf(color);
     }
 
-    public String getColor()
-    {
+    public String getColor() {
         return color;
     }
-    public Cat()
+
+
+
+
+    public Cat(String name, double weight)
     {
-        weight = 1500.0 + 3000.0 * Math.random();
+        this.name = name;
+        this.weight = weight;
+        weight = 500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
-
     }
-    public Cat(double weight)
+    public Cat(Cat cat){
+        this(cat.name,cat.weight);
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeight()
+    {
+        return weight;
+    }
+
+    public  void  setWeight(double weight)
     {
         this.weight = weight;
 
@@ -57,10 +81,10 @@ public class Cat
         weight = weight + amount;
     }
 
-    public Double getWeight()
-    {
-        return weight;
-    }
+//    public Double getWeight()
+//    {
+//        return weight;
+//    }
 
     public String getStatus()
     {

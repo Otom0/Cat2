@@ -1,4 +1,3 @@
-
 public class Cat
 {
     private double originWeight;
@@ -10,6 +9,24 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
+    public String color;
+
+//    public void catColor()
+//    {
+//
+//        Color catColor = Color.BLACK;
+//        System.out.println(catColor);
+//    }
+
+    public void setColor(Color color)
+    {
+        this.color = String.valueOf(color);
+    }
+
+    public String getColor()
+    {
+        return color;
+    }
     public Cat()
     {
         weight = 1500.0 + 3000.0 * Math.random();

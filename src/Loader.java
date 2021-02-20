@@ -7,9 +7,17 @@ public class Loader
         Cat CH = getKitten(1100.00);
         Cat D = getKitten(1100.00);
 
-        System.out.println("Artur " + A.getWeight());
-        System.out.println("Chubajs " + CH.getWeight());
-        System.out.println("Demon " + D.getWeight());
+        A.setColor(Color.WHITE);
+        CH.setColor(Color.BROWN);
+        D.setColor(Color.BLACK);
+
+        System.out.println("Артур  цвет: " + A.getColor() + "  вес:  " + A.getWeight());
+        System.out.println("Чубайс цвет: " + CH.getColor() + "  вес:  " + CH.getWeight());
+        System.out.println("Демон  цвет: " + D.getColor() + "  вес:  " + D.getWeight());
+
+
+
+
 
 
 //        Cat Tishka = new Cat();
